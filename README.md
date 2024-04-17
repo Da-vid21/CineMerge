@@ -100,10 +100,30 @@ An app where a user can create a folder based on movie genre, favorite actor/act
 
 <img src="wireframes/wireframe.gif" width=600>
 
+### Sprints
+
+- **Sprint 1** - Setup the project and create the basic UI(tab bar and navigation controllers, app icon)
+- **Sprint 2** - Start connecting each pages with each other to pass data between them
+- **Sprint 3** - Create a backend service to fetch movie data(Movie Title, Movie Icon and Movie Description) and save it to the local storage
+- **Sprint 4** - Connect each movie to a streaming service to watch the movie
+
+
+### Reflection
+I am getting humbled by Xcode right now every little thing I have learned is getting tested and I ahve been going through the units to remember what I forgot when something breaks hopefully I can get this app to work by the end of the sprints
+
+### Sprint 1 App Demo
+
+<div>
+    <a href="https://www.loom.com/share/f08d80ac971e4ea79832e7e23fb03af7">
+      <img style="max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/f08d80ac971e4ea79832e7e23fb03af7-with-play.gif">
+    </a>
+</div>
+
 ### [BONUS] Digital Wireframes & Mockups
 
 ### [BONUS] Interactive Prototype
 
+#### Figma Design
 <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FjmdVcogrCFzzN7xKC7mO1y%2FMovie-Mobile-App-UI-Design-(Community)%3Ftype%3Ddesign%26node-id%3D0%253A1%26mode%3Ddesign%26t%3DjLQngppAycsAlZcE-1" allowfullscreen></iframe>
 
 <a href="https://www.figma.com/file/jmdVcogrCFzzN7xKC7mO1y/Movie-Mobile-App-UI-Design-(Community)?type=design&node-id=0%3A1&mode=design&t=jLQngppAycsAlZcE-1">Figma Link</a>
