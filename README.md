@@ -102,7 +102,7 @@ An app where a user can create a folder based on movie genre, favorite actor/act
 
 ### Sprints
 
-- **Sprint 1** - Setup the project and create the basic UI(tab bar and navigation controllers, app icon)
+- [X] **Sprint 1** - Setup the project and create the basic UI(tab bar and navigation controllers, app icon)
 - **Sprint 2** - Start connecting each pages with each other to pass data between them
 - **Sprint 3** - Create a backend service to fetch movie data(Movie Title, Movie Icon and Movie Description) and save it to the local storage
 - **Sprint 4** - Connect each movie to a streaming service to watch the movie
