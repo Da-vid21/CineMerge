@@ -103,7 +103,7 @@ An app where a user can create a folder based on movie genre, favorite actor/act
 ### Sprints
 
 - [X] **Sprint 1** - Setup the project and create the basic UI(tab bar and navigation controllers, app icon)
-- **Sprint 2** - Start connecting each pages with each other to pass data between them
+- [X] **Sprint 2** - Start connecting each pages with each other
 - **Sprint 3** - Create a backend service to fetch movie data(Movie Title, Movie Icon and Movie Description) and save it to the local storage
 - **Sprint 4** - Connect each movie to a streaming service to watch the movie
 
@@ -119,6 +119,15 @@ I am getting humbled by Xcode right now every little thing I have learned is get
     </a>
 </div>
 
+### Sprint 2 App Demo
+I currently have a problem where my folder data doesn't show up and rather fails and it was working before so I am trying to figure out what went wrong. If I figure that out I don't need placeholders for the folders and movies but rather the actual data
+
+<div>
+    <a href="https://www.loom.com/share/47ba6c06aeca4e618e8e04b254631a8d">
+      <img style="max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/47ba6c06aeca4e618e8e04b254631a8d-with-play.gif">
+    </a>
+  </div>
+
 ### [BONUS] Digital Wireframes & Mockups
 
 ### [BONUS] Interactive Prototype
@@ -128,9 +137,24 @@ I am getting humbled by Xcode right now every little thing I have learned is get
 
 <a href="https://www.figma.com/file/jmdVcogrCFzzN7xKC7mO1y/Movie-Mobile-App-UI-Design-(Community)?type=design&node-id=0%3A1&mode=design&t=jLQngppAycsAlZcE-1">Figma Link</a>
 
-## Schema 
 
-[This section will be completed in Unit 9]
+### Schema
+#### Folders
+| Property    | Type     | Description                   |
+|-------------|----------|-------------------------------|
+| folderName  | String   | Name of the folder            |
+| folderImage | File     | Image for the folder          |
+| folderColor | String   | Color for the folder          |
+| folderID    | String   | Unique identifier for the folder |
+
+#### Movies
+| Property    | Type     | Description                   |
+|-------------|----------|-------------------------------|
+| movieName   | String   | Name of the movie             |
+| movieImage  | File     | Image for the movie           |
+| movieID     | String   | Unique identifier for the movie|
+| folderID    | Pointer to Folder | Foreign key referencing the folder |
+| movieLink   | String   | Link to watch the movie        |
 
 ### Models
 
