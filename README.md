@@ -104,8 +104,8 @@ An app where a user can create a folder based on movie genre, favorite actor/act
 
 - [X] **Sprint 1** - Setup the project and create the basic UI(tab bar and navigation controllers, app icon)
 - [X] **Sprint 2** - Start connecting each pages with each other
-- **Sprint 3** - Create a backend service to fetch movie data(Movie Title, Movie Icon and Movie Description) and save it to the local storage
-- **Sprint 4** - Connect each movie to a streaming service to watch the movie
+- [X] **Sprint 3** - Create a backend service to fetch movie data(Movie Title, Movie Icon and Movie Description) and save it to the local storage
+- [X] **Sprint 4** - Connect each movie to a streaming service to watch the movie
 
 
 ### Reflection
@@ -127,6 +127,14 @@ I currently have a problem where my folder data doesn't show up and rather fails
       <img style="max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/47ba6c06aeca4e618e8e04b254631a8d-with-play.gif">
     </a>
   </div>
+
+### Sprint 3 and 4 App Demo
+I finished the app and also built a backend service using flask to get data from the server and save it to the local storage. I also connected the movies to a streaming service to watch the movie.
+<div>
+    <a href="https://www.loom.com/share/6bb778b9eb89421c97119ab913fcda35">
+      <img style="max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/6bb778b9eb89421c97119ab913fcda35-with-play.gif">
+    </a>
+</div>
 
 ### [BONUS] Digital Wireframes & Mockups
 
@@ -163,5 +171,25 @@ I currently have a problem where my folder data doesn't show up and rather fails
 ### Networking
 
 - [Add list of network requests by screen ]
+<br>
+Does a api request to get the movie data from flask server 
+Flask requests supabase to get the movie data
+
 - [Create basic snippets for each Parse network request]
+#### Get Folders
+```swift 
+let query = PFQuery(className:"Folders")
+query.whereKey("folderID", equalTo: currentUser)
+query.findObjectsInBackground { (folders: [PFObject]?, error: Error?) in
+   if let error = error { 
+      print(error.localizedDescription)
+   } else if let folders = folders {
+      print("Successfully retrieved \(folders.count) folders.")
+```
+
 - [OPTIONAL: List endpoints if using existing API such as Yelp]
+localhost:5000/getFolders
+localhost:5000/getMovies
+localhost:5000/addFolder
+localhost:5000/addMovie
+localhost:5000/getMovieDetailed
